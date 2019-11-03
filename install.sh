@@ -51,7 +51,7 @@ else
   docker-compose run --rm web upgrade
 fi
 
-cleanup
+# cleanup
 
 echo ""
 echo "----------------"
