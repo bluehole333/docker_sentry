@@ -10,8 +10,15 @@ $ systemctl enable docker
 
 ```
 
+## 自动安装
 
-## 安装Sentry
+
+```
+$ sh install.sh
+```
+
+
+## 手动Sentry
 
 1. Pull
 
