@@ -30,6 +30,10 @@ $ git clone https://github.com/bluehole333/docker_sentry.git
 ```
 $ cd docker_sentry
 $ docker-compose run --rm web config generate-secret-key
+
+# 如果碰到运行错误ERROR: Volume sentry-data declared as external, but could not be found. Please create the volume manually using `docker volume create --name=sentry-data` and try again
+$ docker volume create --name=sentry-data
+$ docker volume create --name=sentry-postgres
 ```
 
 3. 创建数据库和超级管理员
