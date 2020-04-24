@@ -35,6 +35,8 @@ services:
   postgres:
     restart: unless-stopped
     image: postgres:9.5
+    env_file:
+      - .env
     volumes:
       - sentry-postgres:/var/lib/postgresql/data
 

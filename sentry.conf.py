@@ -75,7 +75,7 @@ if postgres:
             ),
             'PASSWORD': (
                     env('SENTRY_DB_PASSWORD')
-                    or env('POSTGRES_ENV_POSTGRES_PASSWORD')
+                    or env('POSTGRES_PASSWORD')
                     or ''
             ),
             'HOST': postgres,
